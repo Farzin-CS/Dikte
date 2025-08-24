@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width,initial-scale=1,user-scalable=no,viewport-fit=cover" name="viewport"/>
+    <title>Test - Dikte App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto p-8">
+        <h1 class="text-2xl font-bold mb-4">Test Dikte App</h1>
+        
+        <div class="space-y-4">
+            <button id="test-tab" class="nav-tab" data-tab="test">Test Tab</button>
+            <button id="test-btn" class="btn-primary">Test Button</button>
+            <button id="test-modal" class="btn-secondary">Test Modal</button>
+        </div>
+        
+        <div id="test-content" class="tab-content active mt-4">
+            <p>Test content is visible</p>
+        </div>
+        
+        <div id="test-modal-content" class="modal hidden">
+            <div class="modal-overlay"></div>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Test Modal</h3>
+                    <button class="modal-close">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>This is a test modal</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Test basic functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Test page loaded');
+            
+            // Test tab functionality
+            document.getElementById('test-tab').addEventListener('click', () => {
+                console.log('Test tab clicked');
+                document.getElementById('test-content').classList.toggle('active');
+            });
+            
+            // Test button functionality
+            document.getElementById('test-btn').addEventListener('click', () => {
+                console.log('Test button clicked');
+                alert('Button works!');
+            });
+            
+            // Test modal functionality
+            document.getElementById('test-modal').addEventListener('click', () => {
+                console.log('Test modal clicked');
+                document.getElementById('test-modal-content').classList.remove('hidden');
+            });
+            
+            // Test modal close
+            document.querySelector('.modal-close').addEventListener('click', () => {
+                document.getElementById('test-modal-content').classList.add('hidden');
+            });
+            
+            // Test modal overlay close
+            document.querySelector('.modal-overlay').addEventListener('click', () => {
+                document.getElementById('test-modal-content').classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

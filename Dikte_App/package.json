@@ -1,0 +1,290 @@
+{
+  "name": "dikte-app",
+  "version": "1.0.0",
+  "description": "A professional Persian dictation web application with modern UI and advanced features",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "vite preview",
+    "lint": "eslint . --ext .js,.html",
+    "lint:fix": "eslint . --ext .js,.html --fix",
+    "format": "prettier --write .",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "pwa:generate": "pwa-assets-generator",
+    "pwa:validate": "pwa-assets-generator --validate",
+    "deploy:netlify": "npm run build && netlify deploy --prod --dir=dist",
+    "deploy:vercel": "vercel --prod",
+    "deploy:firebase": "npm run build && firebase deploy",
+    "analyze": "vite-bundle-analyzer",
+    "type-check": "tsc --noEmit",
+    "clean": "rimraf dist node_modules/.cache",
+    "start": "npm run dev"
+  },
+  "keywords": [
+    "dikte",
+    "persian",
+    "farsi",
+    "dictation",
+    "education",
+    "pwa",
+    "web-app",
+    "offline",
+    "responsive",
+    "modern-ui"
+  ],
+  "author": {
+    "name": "Dikte App Team",
+    "email": "support@dikte-app.com",
+    "url": "https://dikte-app.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/dikte-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/dikte-app/issues"
+  },
+  "homepage": "https://dikte-app.com",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-legacy": "^4.1.1",
+    "@vitejs/plugin-pwa": "^0.17.4",
+    "vite": "^4.5.0",
+    "vite-plugin-html": "^3.2.0",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-pwa": "^0.17.4",
+    "eslint": "^8.54.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-html": "^7.1.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jsdoc": "^46.9.1",
+    "prettier": "^3.1.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "@testing-library/jest-dom": "^6.1.5",
+    "@testing-library/user-event": "^14.5.1",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.2",
+    "@types/node": "^20.9.0",
+    "pwa-assets-generator": "^1.1.8",
+    "vite-bundle-analyzer": "^0.7.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5"
+  },
+  "dependencies": {
+    "workbox-window": "^7.0.0",
+    "workbox-precaching": "^7.0.0",
+    "workbox-routing": "^7.0.0",
+    "workbox-strategies": "^7.0.0",
+    "workbox-expiration": "^7.0.0",
+    "workbox-cacheable-response": "^7.0.0",
+    "workbox-background-sync": "^7.0.0",
+    "workbox-broadcast-update": "^7.0.0",
+    "workbox-google-analytics": "^7.0.0",
+    "workbox-navigation-preload": "^7.0.0",
+    "workbox-range-requests": "^7.0.0",
+    "workbox-streams": "^7.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "pwa": {
+    "name": "دیکته — نسخه حرفه‌ای",
+    "short_name": "دیکته",
+    "description": "اپلیکیشن حرفه‌ای دیکته برای بهبود مهارت‌های نوشتاری فارسی",
+    "theme_color": "#007bff",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "scope": "/",
+    "start_url": "/",
+    "icons": [
+      {
+        "src": "assets/icons/icon-72x72.png",
+        "sizes": "72x72",
+        "type": "image/png",
+        "purpose": "maskable any"
+      },
+      {
+        "src": "assets/icons/icon-96x96.png",
+        "sizes": "96x96",
+        "type": "image/png",
+        "purpose": "maskable any"
+      },
+      {
+        "src": "assets/icons/icon-128x128.png",
+        "sizes": "128x128",
+        "type": "image/png",
+        "purpose": "maskable any"
+      },
+      {
+        "src": "assets/icons/icon-144x144.png",
+        "sizes": "144x144",
+        "type": "image/png",
+        "purpose": "maskable any"
+      },
+      {
+        "src": "assets/icons/icon-152x152.png",
+        "sizes": "152x152",
+        "type": "image/png",
+        "purpose": "maskable any"
+      },
+      {
+        "src": "assets/icons/icon-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "maskable any"
+      },
+      {
+        "src": "assets/icons/icon-384x384.png",
+        "sizes": "384x384",
+        "type": "image/png",
+        "purpose": "maskable any"
+      },
+      {
+        "src": "assets/icons/icon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable any"
+      }
+    ],
+    "shortcuts": [
+      {
+        "name": "دیکته جدید",
+        "short_name": "جدید",
+        "description": "ایجاد دیکته جدید",
+        "url": "/?tab=new-dikte",
+        "icons": [
+          {
+            "src": "assets/icons/shortcut-new.png",
+            "sizes": "96x96",
+            "type": "image/png"
+          }
+        ]
+      },
+      {
+        "name": "تمرین دیکته",
+        "short_name": "تمرین",
+        "description": "شروع تمرین دیکته",
+        "url": "/?tab=practice",
+        "icons": [
+          {
+            "src": "assets/icons/shortcut-practice.png",
+            "sizes": "96x96",
+            "type": "image/png"
+          }
+        ]
+      },
+      {
+        "name": "تاریخچه",
+        "short_name": "تاریخچه",
+        "description": "مشاهده تاریخچه تمرینات",
+        "url": "/?tab=history",
+        "icons": [
+          {
+            "src": "assets/icons/shortcut-history.png",
+            "sizes": "96x96",
+            "type": "image/png"
+          }
+        ]
+      }
+    ]
+  },
+  "vite": {
+    "build": {
+      "outDir": "dist",
+      "assetsDir": "assets",
+      "sourcemap": false,
+      "minify": "terser",
+      "rollupOptions": {
+        "input": {
+          "main": "index.html"
+        },
+        "output": {
+          "manualChunks": {
+            "vendor": ["workbox-window"],
+            "ui": ["workbox-precaching", "workbox-routing"],
+            "storage": ["workbox-strategies", "workbox-expiration"]
+          }
+        }
+      }
+    },
+    "plugins": [
+      "vite:legacy",
+      "vite:pwa"
+    ],
+    "server": {
+      "port": 3000,
+      "open": true,
+      "host": true
+    },
+    "preview": {
+      "port": 4173,
+      "open": true,
+      "host": true
+    }
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "setupFilesAfterEnv": [
+      "<rootDir>/tests/setup.js"
+    ],
+    "moduleNameMapping": {
+      "^@/(.*)$": "<rootDir>/src/$1"
+    },
+    "collectCoverageFrom": [
+      "assets/js/**/*.js",
+      "!assets/js/**/*.test.js"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:import/recommended",
+      "plugin:jsdoc/recommended",
+      "prettier"
+    ],
+    "plugins": [
+      "import",
+      "jsdoc"
+    ],
+    "env": {
+      "browser": true,
+      "es2021": true,
+      "node": true,
+      "jest": true
+    },
+    "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+    },
+    "rules": {
+      "no-console": "warn",
+      "no-debugger": "error",
+      "no-unused-vars": "warn",
+      "prefer-const": "error",
+      "no-var": "error"
+    }
+  },
+  "prettier": {
+    "semi": true,
+    "trailingComma": "es5",
+    "singleQuote": true,
+    "printWidth": 80,
+    "tabWidth": 2,
+    "useTabs": false,
+    "endOfLine": "lf"
+  }
+}

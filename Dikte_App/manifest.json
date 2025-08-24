@@ -1,0 +1,172 @@
+{
+  "name": "دیکته — نسخه حرفه‌ای",
+  "short_name": "دیکته",
+  "description": "اپلیکیشن حرفه‌ای دیکته برای بهبود مهارت‌های نوشتاری فارسی",
+  "version": "1.0.0",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#007bff",
+  "background_color": "#ffffff",
+  "scope": "/",
+  "lang": "fa",
+  "dir": "rtl",
+  "categories": ["education", "productivity"],
+  "icons": [
+    {
+      "src": "assets/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "assets/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "دیکته جدید",
+      "short_name": "جدید",
+      "description": "ایجاد دیکته جدید",
+      "url": "/?tab=new-dikte",
+      "icons": [
+        {
+          "src": "assets/icons/shortcut-new.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "تمرین دیکته",
+      "short_name": "تمرین",
+      "description": "شروع تمرین دیکته",
+      "url": "/?tab=practice",
+      "icons": [
+        {
+          "src": "assets/icons/shortcut-practice.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "تاریخچه",
+      "short_name": "تاریخچه",
+      "description": "مشاهده تاریخچه تمرینات",
+      "url": "/?tab=history",
+      "icons": [
+        {
+          "src": "assets/icons/shortcut-history.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/screenshots/desktop-dashboard.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "داشبورد اپلیکیشن دیکته"
+    },
+    {
+      "src": "assets/screenshots/mobile-practice.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "تمرین دیکته در موبایل"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  },
+  "handle_links": "preferred",
+  "protocol_handlers": [
+    {
+      "protocol": "web+dikte",
+      "url": "/?dikte=%s"
+    }
+  ],
+  "file_handlers": [
+    {
+      "action": "/",
+      "accept": {
+        "application/json": [".json"],
+        "text/plain": [".txt"]
+      }
+    }
+  ],
+  "share_target": {
+    "action": "/",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+  "permissions": [
+    "storage",
+    "notifications"
+  ],
+  "features": [
+    "Cross Platform",
+    "fast",
+    "simple",
+    "offline"
+  ],
+  "author": "Dikte App Team",
+  "homepage_url": "https://dikte-app.com",
+  "developer": {
+    "name": "Dikte App Team",
+    "url": "https://dikte-app.com"
+  }
+}
