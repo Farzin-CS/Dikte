@@ -44,10 +44,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/dikte-app.git"
+    "url": "https://github.com/Farzin-CS/Dikte.git"
   },
   "bugs": {
-    "url": "https://github.com/your-username/dikte-app/issues"
+    "url": "https://github.com/Farzin-CS/Dikte/issues"
   },
   "homepage": "https://dikte-app.com",
   "engines": {
